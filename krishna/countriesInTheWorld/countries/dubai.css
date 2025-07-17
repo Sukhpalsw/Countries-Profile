@@ -1,10 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-image: url('/images/dubai.png');
-    background-size:cover;
+    background-image: url('../images/dubai.webp');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 100vh;
-    margin: 0;
+    background-attachment: fixed;
 }
 
 
@@ -97,7 +102,7 @@ body {
 
 
 /* Main container styling */
-.indiaNews {
+.dubaiNews {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the boxes horizontally */
@@ -106,7 +111,7 @@ body {
 }
 
 /* Individual box styling */
-.indiaNews > div {
+.dubaiNews > div {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 8px;
     width: 80%; /* Adjust the width of each box */
@@ -119,20 +124,20 @@ body {
     
 }
 
-.indiaNews > div p {
+.dubaiNews > div p {
     color: #000000; /* Text color */
     
 }
 
 /* Responsive adjustments for wider screens */
 @media (min-width: 768px) {
-    .indiaNews {
+    .dubaiNews {
         flex-direction: row; /* Change layout to row on larger screens */
         flex-wrap: wrap; /* Wrap the boxes if there's not enough space in a row */
         justify-content: center;
     }
 
-    .indiaNews > div {
+    .dubaiNews > div {
         width: calc(33.33% - 40px); /* Distribute three boxes per row */
         margin: 10px; 
     }

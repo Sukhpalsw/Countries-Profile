@@ -1,11 +1,12 @@
 body {
-    background-image: url('/images/company\ background.png');
+    background-image: url('./images/company\ background.png');
     background-size: cover;          /* Correct way to make it full size */
     background-repeat: no-repeat;
     background-position: center;     /* Optional: keeps image centered */
     min-height: 100vh;                   /* Full viewport height */
     margin: 0;                       /* Remove default body margin */
     font-family: Arial, sans-serif;
+    
 }
 
 
@@ -15,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Spaces out the items evenly */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+   
     padding: 10px 20px;
 }
 

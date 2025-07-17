@@ -1,13 +1,16 @@
-body {
-    background-image: url('/images/USA.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 100vh;
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-
+body {
+    background-image: url('../images/USA.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
 /* Styling the top bar with logo, title, and login */
 #top-bar {
     display: flex;
@@ -93,11 +96,7 @@ body {
     background-color: #575757;
     color: #fff;
 }
-
-
-
-/* Main container styling */
-.indiaNews {
+.usaNews {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers the boxes horizontally */
@@ -106,7 +105,7 @@ body {
 }
 
 /* Individual box styling */
-.indiaNews > div {
+.usaNews > div {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 8px;
     width: 80%; /* Adjust the width of each box */
@@ -119,20 +118,20 @@ body {
     
 }
 
-.indiaNews > div p {
+.usaNews > div p {
     color: #000000; /* Text color */
     
 }
 
 /* Responsive adjustments for wider screens */
 @media (min-width: 768px) {
-    .indiaNews {
+    .usaNews {
         flex-direction: row; /* Change layout to row on larger screens */
         flex-wrap: wrap; /* Wrap the boxes if there's not enough space in a row */
         justify-content: center;
     }
 
-    .indiaNews > div {
+    .usaNews > div {
         width: calc(33.33% - 40px); /* Distribute three boxes per row */
         margin: 10px; 
     }

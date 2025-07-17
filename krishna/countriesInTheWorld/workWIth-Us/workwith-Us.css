@@ -1,0 +1,44 @@
+/* Main container styling */
+/* Full-screen container centering using Flexbox */
+.workwith-UsNews {
+    display: flex;
+    justify-content: center;    /* horizontal centering */
+    align-items: center;        /* vertical centering */
+    height: 100vh;              /* full viewport height */
+    width: 100vw;               /* full viewport width */
+    box-sizing: border-box;
+}
+
+/* Inner content box styling */
+.workwith-box {
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089);
+    border: 2px solid #575757;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Paragraph text inside box */
+.workwith-box p {
+    color: #000000;
+}
+
+/* Responsive adjustments for wider screens */
+@media (min-width: 768px) {
+    .workwith-UsNews {
+        flex-direction: row; /* Change layout to row on larger screens */
+        flex-wrap: wrap; /* Wrap the boxes if there's not enough space in a row */
+        justify-content: center;
+    }
+
+    .workwith-UsNews> div {
+        width: calc(33.33% - 40px); /* Distribute three boxes per row */
+        margin: 10px; 
+    }
+}

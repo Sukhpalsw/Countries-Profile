@@ -1,30 +1,32 @@
-
 /* Main container styling */
-.contact-UsNews- {
+/* Full-screen container centering using Flexbox */
+.contact-UsNews {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the boxes horizontally */
-    gap: 150px; /* Space between the boxes */
-    padding: 20px;
+    justify-content: center;    /* horizontal centering */
+    align-items: center;        /* vertical centering */
+    height: 100vh;              /* full viewport height */
+    width: 100vw;               /* full viewport width */
+    box-sizing: border-box;
 }
 
-/* Individual box styling */
-.contact-UsNews > div {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+/* Inner content box styling */
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089); /* Subtle shadow for depth */
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089);
     border: 2px solid #575757;
     display: flex;
-    flex-direction: column; /* Ensures content inside each box is in a column */
-    width: auto;
-    text-align: center; 
-    align-items: center; 
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
-.contact-UsNews > div p {
-    color: #000000; /* Text color */
-    
+/* Paragraph text inside box */
+.contact-box p {
+    color: #000000;
 }
 
 /* Responsive adjustments for wider screens */
