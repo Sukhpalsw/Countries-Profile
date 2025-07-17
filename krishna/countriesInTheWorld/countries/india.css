@@ -1,15 +1,10 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-image: url('../images/india.png');
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: top center;
-    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
 }
 
 

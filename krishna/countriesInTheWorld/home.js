@@ -17,13 +17,13 @@ function loadHTML(id, url) {
 
 // Load common components on DOM load
 window.addEventListener("DOMContentLoaded", () => {
-    loadHTML("nav-placeholder", "/nav/nav.html");
-    loadHTML("footer-placeholder", "/footer/footer.html");
+    loadHTML("nav-placeholder", "./nav/nav.html");
+    loadHTML("footer-placeholder", "./footer/footer.html");
 
     // Optional: if you have heading or main sections
     const heading = document.getElementById("heading-placeholder");
-    if (heading) loadHTML("heading-placeholder", "/heading/heading.html");
+    if (heading) loadHTML("heading-placeholder", "./heading/heading.html");
 
     const main = document.getElementById("main-placeholder");
-    if (main) loadHTML("main-placeholder", "/main/main.html");
+    if (main) loadHTML("main-placeholder", "./main/main.html");
 });

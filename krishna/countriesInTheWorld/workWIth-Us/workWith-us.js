@@ -5,6 +5,11 @@ function loadHTML(id, url) {
             return response.text();
         })
         .then(data => {
+            // Fix image paths in the HTML content before inserting it
+            if (id === 'footer-placeholder') {
+                data = data.replace(/src="\.\/images\//g, 'src="../images/');
+            }
+            
             document.getElementById(id).innerHTML = data;
         })
         .catch(error => {
