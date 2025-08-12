@@ -111,8 +111,7 @@ body {
 
 /* Individual box styling */
 .franceNews > div {
-    background-color: rgba(255, 255, 255, 0.777); /* Semi-transparent white background */
-    border-radius: 8px;
+  border-radius: 8px;
     width: 80%; /* Adjust the width of each box */
     max-width: 600px; /* Maximum width to ensure responsiveness */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089); /* Subtle shadow for depth */
@@ -120,11 +119,17 @@ body {
     display: flex;
     flex-direction: column; /* Ensures content inside each box is in a column */
     text-align: center; /* Centers the text inside each box */
+    background: linear-gradient(135deg, rgba(168, 18, 18, 0.938), rgba(3, 169, 244, 0.8));
+
     
 }
 
 .franceNewss > div p {
-    color: #000000; /* Text color */
+    color: #ffffff; /* Text color */
+    
+}
+.franceNewss > div li {
+    color: #ffffff; /* Text color */
     
 }
 

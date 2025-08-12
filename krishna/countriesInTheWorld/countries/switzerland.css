@@ -107,19 +107,18 @@ body {
     gap: 150px; /* Space between the boxes */
     padding: 20px;
 }
-
 /* Individual box styling */
 .switzerlandNews > div {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    border-radius: 8px;
-    width: 80%; /* Adjust the width of each box */
-    max-width: 600px; /* Maximum width to ensure responsiveness */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089); /* Subtle shadow for depth */
-    border: 2px solid #575757;
+    background-color: #f5f5f5; /* Light gray background for elegance */
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #ccc; /* Subtle gray border */
     display: flex;
-    flex-direction: column; /* Ensures content inside each box is in a column */
-    text-align: center; /* Centers the text inside each box */
-    
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    padding: 24px;
 }
 
 .switzerlandNews > div p {
