@@ -1,5 +1,5 @@
 body {
-    background-image: url('./images/company\ background.png');
+    background-image: url('./images/countries\ in\ the\ world.jpg');
     background-size: cover;          /* Correct way to make it full size */
     background-repeat: no-repeat;
     background-position: center;     /* Optional: keeps image centered */
@@ -133,4 +133,8 @@ body {
         width: 20px;
         height: 20px;
     }
+}
+
+.movingText {
+  color: rgba(0, 0, 0, 0.9);
 }

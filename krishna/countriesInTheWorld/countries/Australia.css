@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/Australia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+
+/* Styling the top bar with logo, title, and login */
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+}
+
+#logo img {
+    width: 80px;
+    height: auto;
+}
+
+#top-bar h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center; 
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+
+/* Main navigation bar styles */
+#main-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+    border-color: #333;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 100%; /* Positions the dropdown below the parent */
+}
+
+.dropdown-content li {
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+
+
+/* Main container styling */
+.AustraliaNews {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the boxes horizontally */
+    gap: 150px; /* Space between the boxes */
+    padding: 20px;
+}
+
+/* Individual box styling */
+.AustraliaNews > div {
+    border-radius: 16px;
+    width: 95%; /* Make the box wider */
+    max-width: 900px; /* Increase max width */
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.13); /* Stronger shadow for depth */
+    border: 3px solid #575757;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(168, 18, 18, 0.938), rgba(3, 169, 244, 0.8));
+    padding: 40px 32px 36px 32px;
+    font-size: 1rem;
+}
+
+.AustraliaNews > div p {
+    color: #ffffff; /* Text color */
+    
+}
+.AustraliaNews > div li {
+    color: #ffffff; /* Text color */
+    
+}
+
+/* Responsive adjustments for wider screens */
+@media (min-width: 768px) {
+    .AustraliaNews {
+        flex-direction: row; /* Change layout to row on larger screens */
+        flex-wrap: wrap; /* Wrap the boxes if there's not enough space in a row */
+        justify-content: center;
+    }
+
+    .AustraliaNews > div {
+        width: calc(33.33% - 40px); /* Distribute three boxes per row */
+        margin: 10px; 
+    }
+}
