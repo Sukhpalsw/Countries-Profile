@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -13,33 +14,44 @@ body {
 /* Main container styling */
 /* Full-screen container centering using Flexbox */
 .about-UsNew {
-    display: flex;
-    justify-content: center;    /* horizontal centering */
-    align-items: center;        /* vertical centering */
-    height: 100vh;              /* full viewport height */
-    width: 100vw;               /* full viewport width */
-    box-sizing: border-box;
+          
+       display: flex;
+    flex-direction: column;
+     /* Centers the boxes horizontally */
+    gap: 15px; /* Space between the boxes */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 80vh; /* Ensure it takes at least full viewport height minus header/footer */
+    
+
 }
 
 /* Inner content box styling */
 .about-box {
-    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
-    padding: 30px;                /* Add padding for better spacing */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.089);
-    border: 2px solid #575757;
+     border-radius: 16px;
+    width: 75%; /* Make the box wider */
+    max-width: 900px; /* Increase max width */
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.13); /* Stronger shadow for depth */
+    border: 3px solid #575757;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    box-sizing: border-box;
+    background: linear-gradient(135deg, rgba(168, 18, 18, 0.938), rgba(3, 169, 244, 0.8));
+    padding: 40px 32px 36px 32px;
+    font-size: 1rem;
 }
+
 
 /* Paragraph text inside box */
 .about-box p {
-    color: #000000;
+    color: #eadcdc;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.about-box li {
+    color: #eadcdc;
     line-height: 1.6;
     margin: 15px 0;
 }
