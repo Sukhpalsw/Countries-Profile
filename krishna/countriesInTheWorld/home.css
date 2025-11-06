@@ -95,20 +95,31 @@ body {
 #heading {
     text-align: center;
     margin: 40px 0 20px 0;
-    color: #222;
-    background: rgba(255,255,255,0.7);
+    color: #000000;
+     background: linear-gradient(135deg, rgba(205, 31, 31, 0.702), rgba(3, 169, 244, 0.8));
     padding: 20px 0;
     border-radius: 8px;
 }
+#heading h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+#heading p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
 
-#main-content {
+
+/* #main-content {
     max-width: 900px;
     margin: 0 auto 40px auto;
     background: rgba(255, 255, 255, 0.771);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+} */
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

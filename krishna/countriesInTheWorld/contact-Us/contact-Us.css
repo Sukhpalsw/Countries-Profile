@@ -28,6 +28,10 @@
 .contact-box p {
     color: #f7eeee;
 }
+
+.contact-box li {
+    color: #f7eeee;
+}
 table {
     color: #f7eeee;
     margin: 15px 0;
