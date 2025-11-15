@@ -132,6 +132,10 @@ body {
     
 }
 
+.swedenNews > div {
+    width: 300px;
+}
+
 /* Responsive adjustments for wider screens */
 @media (min-width: 768px) {
     .swedenNews {
