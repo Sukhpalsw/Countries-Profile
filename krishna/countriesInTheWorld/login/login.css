@@ -5,81 +5,98 @@ html, body {
 }
 
 body {
-    background-image: url('../images/countries\ in\ the\ world.jpg');
+    background-image: url('../images/countries in the world.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
     background-attachment: fixed;
-    text-align: center;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aquamarine;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     justify-content: center;
-    height:100vh;
-    color: black; 
+    align-items: center;
 }
 
-.createAccountForm{
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    margin: auto;
-    margin-top: 50px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    border: dotted 2px #000000;
+.createAccountForm {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 2px dotted #667eea;
 }
 
-form{
+.createAccountForm h1 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background: #e6e2e2;
+    padding: 20px;
+    border-radius: 10px;
+    border: double 4px #297fca;
 }
 
-label{
-    font-weight: bold;
-    margin-bottom: 5px;
+label {
+    font-weight: 600;
     font-size: 14px;
 }
 
 input {
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
+    padding: 12px;
     border-radius: 8px;
+    border: 2px solid #ddd;
     font-size: 14px;
 }
 
-button{
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
+    font-weight: 600;
+    color: white;
     cursor: pointer;
-
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
-button:hover{
-    background-color: #b82cae;
-       color: rgb(0, 0, 0);
+button:hover {
+    opacity: 0.9;
 }
 
-.resultInformation{
+.resultInformation {
     margin-top: 20px;
     padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #333;
+    background: #f0f8ff;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    display: none;
 }
 
-.login-here{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
+.login-here {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.login-here a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 15px;
+    border-radius: 8px;
 }

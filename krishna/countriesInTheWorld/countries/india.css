@@ -128,6 +128,10 @@ body {
     color: #ffffff; /* Text color */
     
 }
+.indiaNews > div h2 {
+    color: #ffffff; /* Heading color */
+    margin-bottom: 20px;
+}
 
 /* Responsive adjustments for wider screens */
 @media (min-width: 768px) {
