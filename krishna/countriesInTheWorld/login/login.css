@@ -7,8 +7,6 @@ html, body {
 body {
     background-image: url('../images/countries\ in\ the\ world.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
     background-attachment: fixed;
     text-align: center;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,10 +45,10 @@ label{
     font-size: 14px;
 }
 
-input{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
     font-size: 14px;
 }
 
