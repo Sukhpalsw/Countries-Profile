@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/krishna/countriesInTheWorld/images/eruope.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+
+
+/* Styling the top bar with logo, title, and login */
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 10px 20px;
+}
+
+#logo img {
+    width: 80px;
+    height: auto;
+}
+
+#top-bar h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center; 
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+
+/* Main navigation bar styles */
+#main-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+    border-color: #333;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 100%; /* Positions the dropdown below the parent */
+}
+
+.dropdown-content li {
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+
+.europeNews{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 19px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.europeNews .box{
+    background: #ffffffbd;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid #eeececbd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+}
+
+.europeNews .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.europeNews h3{
+    color: #2840c6;
+    margin-bottom: 11px;
+    border-bottom: 2px solid #2840c6;
+    padding-bottom: 6px;
+    font-size: 25px;
+}
+
+.europeNews p{
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2f2e2e;
+    text-align: justify;
+}
+
+.europeNews6 {
+    background: #ffffffbd;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid #eeececbd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    
+}
+
+.europeNews6 h3{
+    color: #2840c6;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #2840c6;
+    padding-bottom: 6px;
+    
+}
+
+
+.europeNews6 ul {
+    padding-left: 20px;
+}
+
+
+.europeNews6  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2f2e2e;
+}
+
+/* for tablet */
+@media (max-width: 992px) {
+    .europeNews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .europeNews6 {
+        grid-column: 1 / 3;
+    }
+
+}
+
+
+/* for mobile */
+@media (max-width: 768px) {
+    .europeNews {
+        grid-template-columns: 1fr;
+    }
+
+    .europeNews6 {
+        grid-column: 1;
+    }
+
+    .europeNews h3,
+    .europeNews6 h3 {
+        font-size: 20px;
+    }
+
+    .europeNews p,
+    .europeNews6 li {
+        font-size: 15px;
+    }
+
+}
+
