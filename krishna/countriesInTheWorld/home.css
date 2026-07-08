@@ -46,13 +46,14 @@ body {
 }
 
 /* Container for the footer content */
-.footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-    max-width: 1200px;
-    
+.footer-container{
+    width:100%;
+    max-width:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    box-sizing:border-box;
 }
 
 /* Footer sections styling */
